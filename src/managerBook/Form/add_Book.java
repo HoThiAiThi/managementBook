@@ -7,7 +7,7 @@ import managerBook.Services.service;
 
 public class add_Book extends javax.swing.JFrame {
 
-    book bookk = new book();
+    book bookkkkkkk = new book();
     service services = new service();
     public add_Book() {
         initComponents();
@@ -162,10 +162,10 @@ public class add_Book extends javax.swing.JFrame {
             else{
                 int confirm = JOptionPane.showConfirmDialog(this,"You can want add","Error",JOptionPane.YES_NO_OPTION);
                 if(confirm == JOptionPane.YES_OPTION){
-                    bookk = new book();
-                    bookk.setTitle(title_TextField.getText());
-                    bookk.setPrice(Double.parseDouble(price_TextField.getText()));
-                    services.addBook(bookk);
+                    bookkkkkkk = new book();
+                    bookkkkkkk.setTitle(title_TextField.getText());
+                    bookkkkkkk.setPrice(Double.parseDouble(price_TextField.getText()));
+                    services.addBook(bookkkkkkk);
                     JOptionPane.showMessageDialog(this, "Successfully added");
                     managerBook manager = new managerBook();
                     manager.setVisible(true);
